@@ -5,9 +5,16 @@ $array = [
     [1, 'D', 'E', 'F']
 ];
 
-for ($i = 0; $i < 3; $i++) {
-    for ($j = 0; $j < 4; $j++) {
-        echo $array[$i][$j] . " ";
+for ($i = 0; $i <= 2; $i++) {
+    for ($j = 0; $j <= 2-$i; $j++) {
+        echo $array[$i][$j]." ";
+    }
+    echo "<br>";
+}
+echo "<br>";
+for ($i = 0; $i <= 2; $i++) {
+    for ($j = 3-$i; $j <= 3; $j++) {
+        echo $array[$i][$j]." ";
     }
     echo "<br>";
 }
