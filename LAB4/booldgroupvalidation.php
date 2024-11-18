@@ -1,0 +1,14 @@
+<?php
+session_start();
+if(isset($_POST['submit']))
+{
+    if(empty($_POST['bloodgroup']))
+    {
+        header('location:bloodgroup.html');
+    }
+    else
+    {
+        echo"Welcome";
+    }
+}
+?>

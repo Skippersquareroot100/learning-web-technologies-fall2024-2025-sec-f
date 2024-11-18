@@ -6,14 +6,15 @@ if (isset($_POST['submit'])) {
     $yyyy=$_REQUEST['y'];
      
 
-    if (empty($dd) || empty($mm) || empty($yyyy)) 
+   
+    if(($dd>=1 && $dd<=31) && ($mm>=1 && $mm<=12) && ($yyyy>=1953 && $yyyy<=1998) )
+    {
+        echo"HELLO SIR! Your Date of Birth is, ".$dd."/".$mm."/".$yyyy;
+
+    }
+    else
     {
         header('location: dob.html');
-    } 
-    else if (strlen($dd)>2 || strlen($mm)>2 || strlen($yyyy)>4) 
-    {
-     
-        echo "Welcome Home";
     }
 }
 ?>
