@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>
+        Registration Page
+    </title>
+</head>
+
+<body>
+    <form method="post" action="regvalidation.php" enctype="">
+        <fieldset>
+            <legend><b>Registration Page</b></legend>
+            <table>
+                <tr>
+                    <td> First Name:</td>
+                    <td><input type="text" name="fname" value="" /> </td>
+                    <td>*</td>
+                </tr>
+                <tr>
+                    <td> Last Name:</td>
+                    <td><input type="text" name="lname" value="" /> </td>
+                </tr>
+                <tr>
+                    <td> Password:</td>
+                    <td><input type="password" name="password" value="" /> </td>
+                    <td>*</td>
+                </tr>
+                <tr>
+                    <td>Confirm Password:</td>
+                    <td><input type="password" name="cpassword" value="" /> </td>
+                    <td>*</td>
+                </tr>
+                <td> Email:</td>
+                <td> <input type="text" name="emailname" value=""> </td>
+                <td> <button type="button" onclick="alert('Enter your email in the box')">i</button></td>
+                </tr>
+                <td>Birth Date:</td>
+                <td> <input type="text" name="d" value="" size="4px" placeholder="dd"> /
+                    <input type="text" name="m" value="" size="4px" placeholder="mm"> /
+                    <input type="text" name="y" value="" size="6px" placeholder="yyyy">
+                </td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="Gender" value=""> M
+                        <input type="radio" name="Gender" value=""> F
+                        <input type="radio" name="Gender" value=""> O
+                    </td>
+
+                <tr>
+                    <td>Degree:</td>
+                    <td>
+                        <input type="checkbox" name="bsc" value=""> BSc
+                        <input type="checkbox" name="msc" value=""> Msc
+                        <input type="checkbox" name="dr" value=""> Dr
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Blood Group:</td>
+                    <td>
+                        <select name="bloodgroup">
+                            <option value=""></option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+
+                    <td colspan="2" align="right"></br><input type="submit" name="submit" value="Submit" /></td>
+
+                </tr>
+                <tr>
+
+                    <td colspan="2" align="right"><input type="reset" name="reset" value="Reset" /></td>
+
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
